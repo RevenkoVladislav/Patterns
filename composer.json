@@ -1,0 +1,16 @@
+{
+    "name": "vladislav/patterns",
+    "description": "learning design patterns in PHP",
+    "autoload": {
+        "psr-4": {
+            "Patterns\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RevenkoVladislav",
+            "email": "Vlad_reven@mail.ru"
+        }
+    ],
+    "require": {}
+}
