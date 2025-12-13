@@ -3,6 +3,7 @@
 require __DIR__ . '/vendor/autoload.php';
 
 use Patterns\Generating\Factory\SimpleFactory;
+use Patterns\Generating\Factory\SimpleFactory2;
 use Patterns\Generating\Singleton;
 
 echo "<h1>Singleton</h1>";
@@ -24,3 +25,17 @@ echo "<br>";
 
 $productSimpleFactory = $simpleFactory->make();
 var_dump($productSimpleFactory);
+echo "<br>";
+
+echo "<hr>";
+
+echo "<h1>SimpleFactory - вторая реализация</h1>";
+$user = SimpleFactory2::create('user');
+$admin = SimpleFactory2::create('admin');
+
+var_dump($user) . PHP_EOL;
+echo "<br>";
+var_dump($admin) . PHP_EOL;
+echo "<br>";
+
+echo "<hr>";
